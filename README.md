@@ -8,7 +8,7 @@ Here's the list of operators that have been finished
 
 | Operator | RxJava 2.x | RxKotlin |
 | -------- | ---------- | -------- |
-| [Observable.create][1] | Done | TODO |
+| [Observable.create][1] | Done | Done |
 
 
 [1]: http://reactivex.io/documentation/operators/create.html
