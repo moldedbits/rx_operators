@@ -7,7 +7,7 @@ To contribute, please check the [wiki](https://github.com/moldedbits/rx_operator
 Here's the list of operators that have been finished
 
 | Operator | RxJava 2.x | RxKotlin |
-| -------- | ---------- | -------- |
+|----------|------------|----------|
 | [Observable.create][1] | Done | Done |
 | [Observable.generate][2] | Done | |
 
