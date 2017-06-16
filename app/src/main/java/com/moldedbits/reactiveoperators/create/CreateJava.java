@@ -2,17 +2,18 @@ package com.moldedbits.reactiveoperators.create;
 
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
 
-public class CreateSample {
+public class CreateJava {
 
     private static final String TAG = "RxSamples";
 
-    public static void createSample(View view) {
+    public static void createSample(View view, TextView output) {
 
         final ClickProvider clickProvider = new ClickProvider(view);
 
@@ -43,7 +44,7 @@ public class CreateSample {
 
             @Override
             public void onNext(@NonNull View o) {
-                Log.d("RxJava", "Click event detected");
+                output.setText(String.format("%s\n%s", output.getText(), "Click detected from JAVA"));
             }
 
             @Override
@@ -58,7 +59,7 @@ public class CreateSample {
         });
     }
 
-    private static class ClickProvider implements AutoCloseable {
+    static class ClickProvider implements AutoCloseable {
 
         private View view;
 
