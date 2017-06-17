@@ -4,10 +4,11 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 
-import com.moldedbits.reactiveoperators.create.CreateJava
-import com.moldedbits.reactiveoperators.create.CreateKotlin
-import com.moldedbits.reactiveoperators.create.GenerateJava
-import com.moldedbits.reactiveoperators.create.UnsafeCreateSample
+import com.moldedbits.reactiveoperators.creating.create.CreateJava
+import com.moldedbits.reactiveoperators.creating.create.CreateKotlin
+import com.moldedbits.reactiveoperators.creating.create.GenerateJava
+import com.moldedbits.reactiveoperators.creating.create.UnsafeCreateSample
+import com.moldedbits.reactiveoperators.creating.defer.DeferSample
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,5 +27,7 @@ class MainActivity : AppCompatActivity() {
         GenerateJava.test()
 
         UnsafeCreateSample.unsafeCreate()
+
+        DeferSample.deferSample();
     }
 }
