@@ -8,7 +8,8 @@ import com.moldedbits.reactiveoperators.creating.create.CreateJava
 import com.moldedbits.reactiveoperators.creating.create.CreateKotlin
 import com.moldedbits.reactiveoperators.creating.create.GenerateJava
 import com.moldedbits.reactiveoperators.creating.create.UnsafeCreateSample
-import com.moldedbits.reactiveoperators.creating.defer.DeferSample
+import com.moldedbits.reactiveoperators.creating.defer.DeferJava
+import com.moldedbits.reactiveoperators.creating.defer.DeferKotlin
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         UnsafeCreateSample.unsafeCreate()
 
-        DeferSample.deferSample();
+        DeferJava.deferSample()
+        DeferKotlin.deferSample()
     }
 }
