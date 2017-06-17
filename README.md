@@ -8,8 +8,9 @@ Here's the list of operators that have been finished
 
 | Operator | RxJava 2.x | RxKotlin |
 |----------|------------|----------|
-| [Observable.create][1] | create, generate, unsafeCreate | create |
-| [Observable.defer][2] | defer | defer |
+| [Create][1] | create, generate, unsafeCreate | create |
+| [Defer][2] | defer | defer |
+| [Empty/Never/Throw][3] | empty, never, error | empty, never , error |
 
 [1]: http://reactivex.io/documentation/operators/create.html
 [2]: http://reactivex.io/documentation/operators/defer.html
