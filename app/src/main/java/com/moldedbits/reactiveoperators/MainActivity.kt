@@ -10,6 +10,8 @@ import com.moldedbits.reactiveoperators.creating.create.GenerateJava
 import com.moldedbits.reactiveoperators.creating.create.UnsafeCreateSample
 import com.moldedbits.reactiveoperators.creating.defer.DeferJava
 import com.moldedbits.reactiveoperators.creating.defer.DeferKotlin
+import com.moldedbits.reactiveoperators.creating.empty.EmptyJava
+import com.moldedbits.reactiveoperators.creating.empty.EmptyKotlin
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,5 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         DeferJava.deferSample()
         DeferKotlin.deferSample()
+        EmptyJava.test()
+        EmptyKotlin.test()
     }
 }
