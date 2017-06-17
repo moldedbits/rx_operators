@@ -7,6 +7,7 @@ import android.widget.TextView
 import com.moldedbits.reactiveoperators.create.CreateJava
 import com.moldedbits.reactiveoperators.create.CreateKotlin
 import com.moldedbits.reactiveoperators.create.GenerateJava
+import com.moldedbits.reactiveoperators.create.UnsafeCreateSample
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,5 +24,7 @@ class MainActivity : AppCompatActivity() {
         CreateKotlin.createSample(findViewById(R.id.btn_kotlin), output)
 
         GenerateJava.test()
+
+        UnsafeCreateSample.unsafeCreate()
     }
 }
