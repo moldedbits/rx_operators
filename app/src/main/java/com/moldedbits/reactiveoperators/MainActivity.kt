@@ -3,7 +3,6 @@ package com.moldedbits.reactiveoperators
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
-
 import com.moldedbits.reactiveoperators.creating.create.CreateJava
 import com.moldedbits.reactiveoperators.creating.create.CreateKotlin
 import com.moldedbits.reactiveoperators.creating.create.GenerateJava
@@ -14,6 +13,8 @@ import com.moldedbits.reactiveoperators.creating.empty.EmptyJava
 import com.moldedbits.reactiveoperators.creating.empty.EmptyKotlin
 import com.moldedbits.reactiveoperators.creating.from.FromJava
 import com.moldedbits.reactiveoperators.creating.from.FromKotlin
+import com.moldedbits.reactiveoperators.utility.timestamp.TimestampJava
+import com.moldedbits.reactiveoperators.utility.timestamp.TimestampKotlin
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,5 +42,8 @@ class MainActivity : AppCompatActivity() {
 
         FromJava.test()
         FromKotlin.test()
+
+        TimestampJava.test()
+        TimestampKotlin.test()
     }
 }
