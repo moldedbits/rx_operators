@@ -2,6 +2,9 @@ package com.moldedbits.reactiveoperators.creating.empty
 
 import android.util.Log
 import io.reactivex.Observable
+import io.reactivex.rxkotlin.subscribeBy
+import io.reactivex.rxkotlin.toMaybe
+import io.reactivex.rxkotlin.toSingle
 
 object EmptyKotlin {
 
@@ -23,16 +26,31 @@ object EmptyKotlin {
     }
 
     private fun testNever() {
-        Observable.never<Any>().subscribe(
-                { Log.d(TAG_NEVER, "onNext") },
-                { Log.d(TAG_NEVER, "onError") }
-        ) { Log.d(TAG_NEVER, "onComplete") }
+        Observable.never<Any>().subscribeBy(
+                onNext = { Log.d(TAG_NEVER, "onNext") },
+                onError = { Log.d(TAG_NEVER, "onError") },
+                onComplete = { Log.d(TAG_NEVER, "onComplete") }
+        )
     }
 
     private fun testError() {
-        Observable.error<Any>(Exception("Sample exception")).subscribe(
-                { Log.d(TAG_ERROR, "onNext") },
-                { Log.d(TAG_ERROR, "onError") }
-        ) { Log.d(TAG_ERROR, "onComplete") }
+        // NOTE:: In the first example, the onError will be called, whereas for the remaining two,
+        // the onNext will be called
+
+        Observable.error<Any>(Exception("Sample exception")).subscribeBy(
+                onNext = { Log.d(TAG_ERROR, "onNext") },
+                onError = { Log.d(TAG_ERROR, "onError") }, // will be called
+                onComplete = { Log.d(TAG_ERROR, "onComplete") }
+        )
+
+        Exception("Sample exception").toSingle().subscribeBy(
+                onSuccess = { Log.d(TAG_ERROR, "onNext") }, // will be called
+                onError = { Log.d(TAG_ERROR, "onError") }
+        )
+
+        Exception("Sample exception").toMaybe().subscribeBy(
+                onSuccess = { Log.d(TAG_ERROR, "onNext") }, // will be called
+                onError = { Log.d(TAG_ERROR, "onError") }
+        )
     }
 }
