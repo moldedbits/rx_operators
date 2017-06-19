@@ -13,7 +13,7 @@ public class CreateJava {
 
     private static final String TAG = "RxSamples";
 
-    public static void createSample(View view, TextView output) {
+    public static void test(View view, TextView output) {
 
         final ClickProvider clickProvider = new ClickProvider(view);
 

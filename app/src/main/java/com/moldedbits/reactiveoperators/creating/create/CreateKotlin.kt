@@ -8,7 +8,7 @@ import io.reactivex.Observable
 object CreateKotlin {
 
     @SuppressLint("SetTextI18n")
-    fun createSample(view: View, output: TextView) {
+    fun test(view: View, output: TextView) {
         val clickProvider = CreateJava.ClickProvider(view)
 
         val observable = Observable.create<View> {

@@ -2,6 +2,8 @@ package com.moldedbits.reactiveoperators.creating.create;
 
 import android.util.Log;
 
+import com.moldedbits.reactiveoperators.model.Polygon;
+
 import java.util.concurrent.Callable;
 
 import io.reactivex.Emitter;
@@ -67,7 +69,7 @@ public class GenerateJava {
                     }})
                 .subscribeOn(Schedulers.io())
                 .subscribe(polygon ->
-                        Log.d(TAG, String.format("new polygon with %d sides", polygon.sides)));
+                        Log.d(TAG, String.format("new polygon with %d sides", polygon.getSides())));
     }
 
     private static void generateWithInitialStateAndConsumer() {
@@ -95,7 +97,7 @@ public class GenerateJava {
         Observable.generate(initialState, consumer)
                 .subscribeOn(Schedulers.io())
                 .subscribe(polygon ->
-                        Log.d(TAG, String.format("new polygon with %d sides", polygon.sides)));
+                        Log.d(TAG, String.format("new polygon with %d sides", polygon.getSides())));
     }
 
     private static void generateWithInitialStateAndBiFunction() {
@@ -113,7 +115,7 @@ public class GenerateJava {
         Observable.generate(initialState, emitter)
                 .subscribeOn(Schedulers.io())
                 .subscribe(polygon ->
-                        Log.d(TAG, String.format("new polygon with %d sides", polygon.sides)));
+                        Log.d(TAG, String.format("new polygon with %d sides", polygon.getSides())));
     }
 
     private static void generateWithInitialStateAndBiFunctionAndDisposeState() {
@@ -134,14 +136,6 @@ public class GenerateJava {
         Observable.generate(initialState, emitter, disposableState)
                 .subscribeOn(Schedulers.io())
                 .subscribe(polygon ->
-                        Log.d(TAG, String.format("new polygon with %d sides", polygon.sides)));
-    }
-
-    private static class Polygon {
-        int sides;
-
-        Polygon(int sides) {
-            this.sides = sides;
-        }
+                        Log.d(TAG, String.format("new polygon with %d sides", polygon.getSides())));
     }
 }

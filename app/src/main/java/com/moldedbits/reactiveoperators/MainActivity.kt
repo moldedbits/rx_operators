@@ -24,15 +24,15 @@ class MainActivity : AppCompatActivity() {
     private fun createSample() {
         val output = findViewById(R.id.textview) as TextView
 
-        CreateJava.createSample(findViewById(R.id.btn_java), output)
-        CreateKotlin.createSample(findViewById(R.id.btn_kotlin), output)
+        CreateJava.test(findViewById(R.id.btn_java), output)
+        CreateKotlin.test(findViewById(R.id.btn_kotlin), output)
 
         GenerateJava.test()
 
-        UnsafeCreateSample.unsafeCreate()
+        UnsafeCreateSample.test()
 
-        DeferJava.deferSample()
-        DeferKotlin.deferSample()
+        DeferJava.test()
+        DeferKotlin.test()
         EmptyJava.test()
         EmptyKotlin.test()
     }
