@@ -11,7 +11,9 @@ Here's the list of operators that have been finished
 | [Create][1] | create, generate, unsafeCreate | create |
 | [Defer][2] | defer | defer |
 | [Empty/Never/Throw][3] | empty, never, error | empty, never , error |
+| [Timestamp][4] | timestamp | timestamp
 
 [1]: http://reactivex.io/documentation/operators/create.html
 [2]: http://reactivex.io/documentation/operators/defer.html
 [3]: http://reactivex.io/documentation/operators/empty-never-throw.html
+[4]: http://reactivex.io/documentation/operators/timestamp.html
