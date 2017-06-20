@@ -13,6 +13,8 @@ import com.moldedbits.reactiveoperators.creating.empty.EmptyJava
 import com.moldedbits.reactiveoperators.creating.empty.EmptyKotlin
 import com.moldedbits.reactiveoperators.creating.from.FromJava
 import com.moldedbits.reactiveoperators.creating.from.FromKotlin
+import com.moldedbits.reactiveoperators.transformation.map.MapJava
+import com.moldedbits.reactiveoperators.transformation.map.MapKotlin
 import com.moldedbits.reactiveoperators.utility.timestamp.TimestampJava
 import com.moldedbits.reactiveoperators.utility.timestamp.TimestampKotlin
 
@@ -45,5 +47,8 @@ class MainActivity : AppCompatActivity() {
 
         TimestampJava.test()
         TimestampKotlin.test()
+
+        MapJava.test()
+        MapKotlin.test()
     }
 }
