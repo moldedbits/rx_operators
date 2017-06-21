@@ -15,6 +15,7 @@ Here's the list of operators that have been finished
 | [Map][5] | map | map
 | [SubscribeOn][6] | subscribeOn | subscribeOn
 | [ObserveOn][7] | observeOn | observeOn
+
 [1]: http://reactivex.io/documentation/operators/create.html
 [2]: http://reactivex.io/documentation/operators/defer.html
 [3]: http://reactivex.io/documentation/operators/empty-never-throw.html
