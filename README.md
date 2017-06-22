@@ -15,6 +15,7 @@ Here's the list of operators that have been finished
 | [Map][5] | map | map
 | [SubscribeOn][6] | subscribeOn | subscribeOn
 | [ObserveOn][7] | observeOn | observeOn
+| [Delay][8] | delay, delaySubscription | delay, delaySubscription
 
 [1]: http://reactivex.io/documentation/operators/create.html
 [2]: http://reactivex.io/documentation/operators/defer.html
@@ -23,3 +24,4 @@ Here's the list of operators that have been finished
 [5]: http://reactivex.io/documentation/operators/map.html
 [6]: http://reactivex.io/documentation/operators/subscribeon.html
 [7]: http://reactivex.io/documentation/operators/observeon.html
+[8]: http://reactivex.io/documentation/operators/delay.html

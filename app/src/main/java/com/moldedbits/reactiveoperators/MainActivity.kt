@@ -15,6 +15,8 @@ import com.moldedbits.reactiveoperators.creating.from.FromJava
 import com.moldedbits.reactiveoperators.creating.from.FromKotlin
 import com.moldedbits.reactiveoperators.transformation.map.MapJava
 import com.moldedbits.reactiveoperators.transformation.map.MapKotlin
+import com.moldedbits.reactiveoperators.utility.delay.DelayJava
+import com.moldedbits.reactiveoperators.utility.delay.DelayKotlin
 import com.moldedbits.reactiveoperators.utility.schedulers.SchedulersJava
 import com.moldedbits.reactiveoperators.utility.schedulers.SchedulersKotlin
 import com.moldedbits.reactiveoperators.utility.timestamp.TimestampJava
@@ -55,5 +57,8 @@ class MainActivity : AppCompatActivity() {
 
         SchedulersJava.test()
         SchedulersKotlin.test()
+
+        DelayJava.test()
+        DelayKotlin.test()
     }
 }
