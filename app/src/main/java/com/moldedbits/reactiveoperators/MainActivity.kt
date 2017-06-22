@@ -13,6 +13,8 @@ import com.moldedbits.reactiveoperators.creating.empty.EmptyJava
 import com.moldedbits.reactiveoperators.creating.empty.EmptyKotlin
 import com.moldedbits.reactiveoperators.creating.from.FromJava
 import com.moldedbits.reactiveoperators.creating.from.FromKotlin
+import com.moldedbits.reactiveoperators.creating.interval.IntervalJava
+import com.moldedbits.reactiveoperators.creating.interval.IntervalKotlin
 import com.moldedbits.reactiveoperators.transformation.map.MapJava
 import com.moldedbits.reactiveoperators.transformation.map.MapKotlin
 import com.moldedbits.reactiveoperators.utility.delay.DelayJava
@@ -31,6 +33,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createSample() {
+        creatingOperators()
+        transformingOperators()
+        utilityOperators()
+    }
+
+    internal fun creatingOperators() {
         val output = findViewById(R.id.textview) as TextView
 
         CreateJava.test(findViewById(R.id.btn_java), output)
@@ -49,11 +57,18 @@ class MainActivity : AppCompatActivity() {
         FromJava.test()
         FromKotlin.test()
 
-        TimestampJava.test()
-        TimestampKotlin.test()
+        IntervalJava.test()
+        IntervalKotlin.test()
+    }
 
+    internal fun transformingOperators() {
         MapJava.test()
         MapKotlin.test()
+    }
+
+    internal fun utilityOperators() {
+        TimestampJava.test()
+        TimestampKotlin.test()
 
         SchedulersJava.test()
         SchedulersKotlin.test()
