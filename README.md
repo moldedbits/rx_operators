@@ -13,7 +13,11 @@ Here's the list of operators that have been finished
 | [Create][1] | create, generate, unsafeCreate | create |
 | [Defer][2] | defer | defer |
 | [Empty/Never/Throw][3] | empty, never, error | empty, never , error |
-| [Delay][8] | delay, delaySubscription | delay, delaySubscription |
+| [From][9] | from | from |
+| [Interval][10] | interval | interval |
+| [Just][11] | just | |
+| [Range][12] | range | |
+| [Repeat][13] | repeat | |
 
 #### Transforming observables
 
@@ -37,6 +41,7 @@ TODO
 
 | Operator | RxJava 2.x | RxKotlin |
 |----------|------------|----------|
+| [Delay][8] | delay, delaySubscription | delay, delaySubscription |
 | [Timestamp][4] | timestamp | timestamp |
 | [SubscribeOn][6] | subscribeOn | subscribeOn |
 | [ObserveOn][7] | observeOn | observeOn |
@@ -69,3 +74,8 @@ TODO
 [6]: http://reactivex.io/documentation/operators/subscribeon.html
 [7]: http://reactivex.io/documentation/operators/observeon.html
 [8]: http://reactivex.io/documentation/operators/delay.html
+[9]: http://reactivex.io/documentation/operators/from.html
+[10]: http://reactivex.io/documentation/operators/interval.html
+[11]: http://reactivex.io/documentation/operators/just.html
+[12]: http://reactivex.io/documentation/operators/range.html
+[13]: http://reactivex.io/documentation/operators/repeat.html
