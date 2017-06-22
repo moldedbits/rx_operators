@@ -6,16 +6,58 @@ To contribute, please check the [wiki](https://github.com/moldedbits/rx_operator
 
 Here's the list of operators that have been finished
 
+#### Creating observables
+
 | Operator | RxJava 2.x | RxKotlin |
 |----------|------------|----------|
 | [Create][1] | create, generate, unsafeCreate | create |
 | [Defer][2] | defer | defer |
 | [Empty/Never/Throw][3] | empty, never, error | empty, never , error |
-| [Timestamp][4] | timestamp | timestamp
-| [Map][5] | map | map
-| [SubscribeOn][6] | subscribeOn | subscribeOn
-| [ObserveOn][7] | observeOn | observeOn
-| [Delay][8] | delay, delaySubscription | delay, delaySubscription
+| [Delay][8] | delay, delaySubscription | delay, delaySubscription |
+
+#### Transforming observables
+
+| Operator | RxJava 2.x | RxKotlin |
+|----------|------------|----------|
+| [Map][5] | map | map |
+
+#### Filtering observables
+
+TODO
+
+#### Combining observables
+
+TODO
+
+#### Error handling operators
+
+TODO
+
+#### Observable utility operators
+
+| Operator | RxJava 2.x | RxKotlin |
+|----------|------------|----------|
+| [Timestamp][4] | timestamp | timestamp |
+| [SubscribeOn][6] | subscribeOn | subscribeOn |
+| [ObserveOn][7] | observeOn | observeOn |
+
+#### Conditional and boolean operators
+
+TODO
+
+#### Mathematical and Aggregate operators
+
+TODO
+
+#### Backpressure operators
+
+TODO
+
+#### Connectable obserable operators
+
+TODO
+
+#### Operators to convert observables
 
 [1]: http://reactivex.io/documentation/operators/create.html
 [2]: http://reactivex.io/documentation/operators/defer.html
