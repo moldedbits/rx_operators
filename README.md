@@ -18,6 +18,7 @@ Here's the list of operators that have been finished
 | [Just][11] | just | |
 | [Range][12] | range | |
 | [Repeat][13] | repeat | |
+| [Timer][14] | timer | timer |
 
 #### Transforming observables
 
@@ -79,3 +80,4 @@ TODO
 [11]: http://reactivex.io/documentation/operators/just.html
 [12]: http://reactivex.io/documentation/operators/range.html
 [13]: http://reactivex.io/documentation/operators/repeat.html
+[14]: http://reactivex.io/documentation/operators/timer.html
