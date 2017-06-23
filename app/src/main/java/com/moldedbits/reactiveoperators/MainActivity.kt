@@ -17,6 +17,7 @@ import com.moldedbits.reactiveoperators.creating.interval.IntervalJava
 import com.moldedbits.reactiveoperators.creating.interval.IntervalKotlin
 import com.moldedbits.reactiveoperators.creating.simple.SimpleCreationJava
 import com.moldedbits.reactiveoperators.creating.timer.TimerJava
+import com.moldedbits.reactiveoperators.creating.timer.TimerKotlin
 import com.moldedbits.reactiveoperators.transformation.map.MapJava
 import com.moldedbits.reactiveoperators.transformation.map.MapKotlin
 import com.moldedbits.reactiveoperators.utility.delay.DelayJava
@@ -65,6 +66,7 @@ class MainActivity : AppCompatActivity() {
         SimpleCreationJava.test()
 
         TimerJava.test()
+        TimerKotlin.test()
     }
 
     internal fun transformingOperators() {
