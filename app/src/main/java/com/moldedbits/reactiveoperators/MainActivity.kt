@@ -13,6 +13,7 @@ import com.moldedbits.reactiveoperators.creating.empty.EmptyJava
 import com.moldedbits.reactiveoperators.creating.empty.EmptyKotlin
 import com.moldedbits.reactiveoperators.creating.from.FromJava
 import com.moldedbits.reactiveoperators.creating.from.FromKotlin
+import com.moldedbits.reactiveoperators.transformation.buffer.BufferJava
 import com.moldedbits.reactiveoperators.transformation.map.MapJava
 import com.moldedbits.reactiveoperators.transformation.map.MapKotlin
 import com.moldedbits.reactiveoperators.utility.delay.DelayJava
@@ -60,5 +61,7 @@ class MainActivity : AppCompatActivity() {
 
         DelayJava.test()
         DelayKotlin.test()
+
+        BufferJava.test()
     }
 }
