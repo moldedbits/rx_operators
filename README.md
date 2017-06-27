@@ -25,8 +25,8 @@ Here's the list of operators that have been finished
 | Operator | RxJava 2.x | RxKotlin |
 |----------|------------|----------|
 | [Map][5] | map | map |
-| [Buffer][15]] buffer | |
-| [FlatMap][16] | concatMap concatMapDelayError concatMapEager concatMapEagerDelayError concatMapIterable flatMap flatMapIterable switchMap switchMapDelayError | |
+| [Buffer][15] buffer | |
+| [FlatMap][16] | concatMap flatMap switchMap | |
 
 #### Filtering observables
 
