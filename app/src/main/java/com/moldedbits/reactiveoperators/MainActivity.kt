@@ -19,6 +19,7 @@ import com.moldedbits.reactiveoperators.creating.simple.SimpleCreationJava
 import com.moldedbits.reactiveoperators.creating.timer.TimerJava
 import com.moldedbits.reactiveoperators.creating.timer.TimerKotlin
 import com.moldedbits.reactiveoperators.transformation.buffer.BufferJava
+import com.moldedbits.reactiveoperators.transformation.flatmap.FlatmapJava
 import com.moldedbits.reactiveoperators.transformation.map.MapJava
 import com.moldedbits.reactiveoperators.transformation.map.MapKotlin
 import com.moldedbits.reactiveoperators.utility.delay.DelayJava
@@ -75,6 +76,8 @@ class MainActivity : AppCompatActivity() {
         MapKotlin.test()
 
         BufferJava.test()
+
+        FlatmapJava.test()
     }
 
     internal fun utilityOperators() {
