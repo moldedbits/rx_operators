@@ -26,6 +26,7 @@ Here's the list of operators that have been finished
 |----------|------------|----------|
 | [Map][5] | map | map |
 | [Buffer][15]] buffer | |
+| [FlatMap][16] | concatMap concatMapDelayError concatMapEager concatMapEagerDelayError concatMapIterable flatMap flatMapIterable switchMap switchMapDelayError | |
 
 #### Filtering observables
 
@@ -83,3 +84,4 @@ TODO
 [13]: http://reactivex.io/documentation/operators/repeat.html
 [14]: http://reactivex.io/documentation/operators/timer.html
 [15]: http://reactivex.io/documentation/operators/buffer.html
+[16]: http://reactivex.io/documentation/operators/flatmap.html
