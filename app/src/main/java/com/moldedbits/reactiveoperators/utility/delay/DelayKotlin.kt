@@ -22,7 +22,7 @@ object DelayKotlin {
         Observable.just(y)
                 .map { x ->
                     Log.i(TAG, "delay Current Time: " + System.currentTimeMillis())
-                    x!! + 2
+                    x + 2
                 }
                 // delays emission of previous observable by specified amount of time
                 .delay(100, TimeUnit.MILLISECONDS)
@@ -31,7 +31,7 @@ object DelayKotlin {
         val abc = Observable.just(y)
                 .map { x ->
                     Log.i(TAG, "delaySubscription Current Time: " + System.currentTimeMillis())
-                    x!! + 2
+                    x + 2
                 }
 
         abc.subscribe { x ->
