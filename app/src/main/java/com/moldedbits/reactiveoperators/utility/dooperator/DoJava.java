@@ -41,7 +41,7 @@ public class DoJava {
                 // operator registers an consumer which will be called whenever an observer
                 // subscribes to the resulting Observable.
                 .doOnSubscribe(disposable -> Log.i(TAG, "doOnSubscribe should get called once"))
-                .doOnError(throwable -> Log.e(TAG, "doOnError should get called on every error"))
+                .doOnError(throwable -> Log.e(TAG, "doOnError should get called on error"))
                 .doOnComplete(() -> Log.i(TAG, "doOnComplete should get called on completion of stream"))
                 // gets called when an ongoing stream is disposed
                 // does not get called if stream is disposed after terminal event
