@@ -25,7 +25,8 @@ Here's the list of operators that have been finished
 | Operator | RxJava 2.x | RxKotlin |
 |----------|------------|----------|
 | [Map][5] | map | map |
-| [Buffer][15]] buffer | |
+| [Buffer][15] | buffer | |
+| [FlatMap][16] | concatMap flatMap switchMap | |
 
 #### Filtering observables
 
@@ -83,3 +84,4 @@ TODO
 [13]: http://reactivex.io/documentation/operators/repeat.html
 [14]: http://reactivex.io/documentation/operators/timer.html
 [15]: http://reactivex.io/documentation/operators/buffer.html
+[16]: http://reactivex.io/documentation/operators/flatmap.html
