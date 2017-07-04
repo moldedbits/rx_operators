@@ -27,6 +27,7 @@ Here's the list of operators that have been finished
 | [Map][5] | map | map |
 | [Buffer][15] | buffer | |
 | [FlatMap][16] | concatMap flatMap switchMap | |
+| [GroupBy][17] | groupBy | |
 
 #### Filtering observables
 
@@ -85,3 +86,4 @@ TODO
 [14]: http://reactivex.io/documentation/operators/timer.html
 [15]: http://reactivex.io/documentation/operators/buffer.html
 [16]: http://reactivex.io/documentation/operators/flatmap.html
+[17]: http://reactivex.io/documentation/operators/groupby.html
